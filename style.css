@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 20%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position:relative;
+    font-size: 30px;
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+span{
+    color:#f9004d;
+}
+.logo:hover{
+    color: #00abf0;
+}
+body{
+    background: #1d09a1;
+    color:#ededed;
+}
+
+.navbar{
+    display: flex;
+    top:0;
+    left:0;
+    justify-content: space-between;
+    align-items: center;
+    background:transparent;
+    padding:30px 40%;
+    width:100%;
+    position:fixed;
+}
+.navbar a{
+    font-size: 18px;
+    color:#ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 55px;
+    transition: .3s;
+
+}
+.navbar ul{
+    z-index: 100;
+    display: flex;
+    margin: 40px;
+    list-style: none;
+
+    
+}
+.navbar a:hover{
+    color:#00abf0;
+
+}
+
+.home {
+    position: relative;
+    display: flex;
+    background: url('C:\POCO M2 PRO\OLD\IMG_20221029_012421.jpg') no repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    padding:70px 10% 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-content {
+    background: transparent;
+    max-width: 600px;
+}
+.home-content h1{
+    font-size:40px ;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 600;
+    color:#00abf0;
+
+}
+.home-content h2{
+    font-size:40px ;
+    font-weight: 500px;
+}
+.home-content p{
+    font-size:16px ;
+    margin:20px 0 40px;
+}
+.button{
+  display: inline-block;
+  width:345px;
+  height:50px;
+  justify-content: space-between;
+  border:2px solid #00abf0;
+  border-radius: 8px; 
+  font-size: 19px;
+  color:#12334c;
+  text-decoration: none;
+  letter-spacing: 1px;
+  position:relative;
+  z-index: 1;
+  transition: .5s;
+}
+.button:hover{
+    box-shadow: 0 0 5px cyan;
+
+}
+.image{
+    width:30%;
+    height:20%;
+    left: 70%;
+    transform:translate(-50%);
+    bottom:0;
+    }
+.image:hover .girl{
+    left:65%
+}
+.about{
+    display:flex;
+    padding:100px 0px;
+    margin-top: 20px;
+    background-color:#554a9b;
+    align-items: center;
+    gap:1.5rem;
+}
+.about-img{
+    padding-bottom: 20%;
+    max-width: 580px;
+    height:auto;
+    width:100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 60px;
+    margin:10px;
+    text-align: justify;
+}
+.about-text h2 span{
+        color:aqua;
+}
+.about-text h4{
+ font-size: 30px;
+ font-weight: 600;
+ color:#fff;
+ line-height: 2.1px;
+ margin:15px 0 30px;
+}
+.about-text p{
+    color:#f3f1f3;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #00abf0;
+    color: #ededed;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .3s;
+}
+button:hover{
+    background-color: transparent;
+    border:2px solid #00abf0;
+    cursor:pointer;
+}
+
+.home-ico{
+    position: absolute;
+    bottom: 40px;
+    left: 22%;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-ico a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height:40px;
+    background:transparent;
+    border:2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #00abf0;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #ededed;
+}
+.home-ico a:hover{
+    color:#ededed;
+}
+.home-ico a::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height:100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-ico a:hover::before{
+    width:100%;
+}
+.home-imgHover{
+    position: absolute;
+    top:0;
+    right:30px;
+    width:300px;
+    height:100%;
+    background:transparent;
+    transition:3s;
+}
+
+.skills{
+    background:#081b29;
+    width:100%;
+    padding:100px 0px;
+
+}
+.title h2{
+    color:white;
+    font-size: 75px;
+    width: 1130px;
+    margin:30px auto;
+    text-align: center;
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.mars{
+    height:365px;
+    width:335px;
+    padding:20px 35px;
+    background:#191919;
+    border-radius: 20px;
+    margin:15px;
+    position:relative;
+    overflow:hidden;
+    text-align: start;
+}
+#contact{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+}
+.form{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width:30%;
+    border:none;
+    outline:none;
+}
+#message{
+    width:20%;
+    padding: 10px;
+    margin:15px;
+    border: none;
+    outline: none;
+}
+#submit{
+    padding: 10px;
+    width:10%;
+    margin:40px;
+    border: none;
+    outline: none;
+}
+#submit:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+
+}
+.contacts{
+    text-align: center;
+}
